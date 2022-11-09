@@ -9,19 +9,19 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.FragmentTransaction
 
-class SecondFragment : Fragment() {
+class ThirdFragment : Fragment() {
     @SuppressLint("UseRequireInsteadOfGet")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_second, container, false)
+        val view = inflater.inflate(R.layout.fragment_third, container, false)
 
-        val btn = view.findViewById<Button>(R.id.beshbarmak)
+        val btn = view.findViewById<Button>(R.id.back)
         btn.setOnClickListener{
-            val thirdFragment = ThirdFragment()
+            val secondFragment = SecondFragment()
             val transaction: FragmentTransaction = fragmentManager!!.beginTransaction()
-            transaction.replace(R.id.menu,thirdFragment)
+            transaction.replace(R.id.menu,secondFragment)
             transaction.commit()
         }
 
