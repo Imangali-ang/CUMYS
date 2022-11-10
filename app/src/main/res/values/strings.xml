@@ -14,4 +14,11 @@
     <string name="qazys">Казы</string>
     <string name="shuzik">Шужык</string>
     <string name="qarta">Карта</string>
+    <string name="back2">Назад</string>
+    <string name="back">Назад</string>
+    <string name="besh_img">besh_img</string>
+    <string name="qazy_info">TextView</string>
+    <string name="back_4">Назад</string>
+    <string name="qarta_menu">qarta_menu</string>
+    <string name="qarta_img">qarta_img</string>
 </resources>

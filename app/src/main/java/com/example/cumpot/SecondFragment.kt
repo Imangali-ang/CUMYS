@@ -20,6 +20,7 @@ class SecondFragment : Fragment() {
         val btn = view.findViewById<Button>(R.id.beshbarmak)
         val btn2 = view.findViewById<Button>(R.id.qazy)
         val btn3 = view.findViewById<Button>(R.id.shuzik)
+        val btn4 = view.findViewById<Button>(R.id.karta)
         btn.setOnClickListener{
             val thirdFragment = ThirdFragment()
             val transaction: FragmentTransaction = fragmentManager!!.beginTransaction()
@@ -36,6 +37,12 @@ class SecondFragment : Fragment() {
             val fifthFragment = FifthFragment()
             val transaction: FragmentTransaction = fragmentManager!!.beginTransaction()
             transaction.replace(R.id.menu,fifthFragment)
+            transaction.commit()
+        }
+        btn4.setOnClickListener{
+            val sixthFragment = SixthFragment()
+            val transaction: FragmentTransaction = fragmentManager!!.beginTransaction()
+            transaction.replace(R.id.menu,sixthFragment)
             transaction.commit()
         }
 
