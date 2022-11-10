@@ -23,4 +23,6 @@
     <string name="qarta_img">qarta_img</string>
     <string name="sorpa_img">sorpa_img</string>
     <string name="sorpa_menu">sorpa_menu</string>
+    <string name="quirdaq_menu">quirdaq_menu</string>
+    <string name="quirdaq_img">quirdaq_img</string>
 </resources>
