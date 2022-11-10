@@ -9,26 +9,19 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.FragmentTransaction
 
-class SecondFragment : Fragment() {
+class FourthFragment : Fragment(){
     @SuppressLint("UseRequireInsteadOfGet")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_second, container, false)
+        val view = inflater.inflate(R.layout.fragment_fourth, container, false)
 
-        val btn = view.findViewById<Button>(R.id.beshbarmak)
-        val btn2 = view.findViewById<Button>(R.id.qazy)
+        val btn = view.findViewById<Button>(R.id.back_2)
         btn.setOnClickListener{
-            val thirdFragment = ThirdFragment()
+            val secondFragment = SecondFragment()
             val transaction: FragmentTransaction = fragmentManager!!.beginTransaction()
-            transaction.replace(R.id.menu,thirdFragment)
-            transaction.commit()
-        }
-        btn2.setOnClickListener{
-            val fourthFragment = FourthFragment()
-            val transaction: FragmentTransaction = fragmentManager!!.beginTransaction()
-            transaction.replace(R.id.menu,fourthFragment)
+            transaction.replace(R.id.menu,secondFragment)
             transaction.commit()
         }
 
