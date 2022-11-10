@@ -27,4 +27,6 @@
     <string name="quirdaq_img">quirdaq_img</string>
     <string name="baursaks_menu">baursaks_menu</string>
     <string name="baursaks_img">baursaks_img</string>
+    <string name="syrne_menu">syrne_menu</string>
+    <string name="syrne_img">syrne_img</string>
 </resources>
