@@ -31,7 +31,7 @@
         android:id="@+id/imageView11"
         android:layout_width="319dp"
         android:layout_height="283dp"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="180dp"
         android:contentDescription="@string/qarta_img"
         android:src="@drawable/qarta"
         app:layout_constraintEnd_toEndOf="parent"

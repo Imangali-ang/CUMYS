@@ -21,4 +21,6 @@
     <string name="back_4">Назад</string>
     <string name="qarta_menu">qarta_menu</string>
     <string name="qarta_img">qarta_img</string>
+    <string name="sorpa_img">sorpa_img</string>
+    <string name="sorpa_menu">sorpa_menu</string>
 </resources>
