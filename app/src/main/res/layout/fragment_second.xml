@@ -11,56 +11,62 @@
         android:id="@+id/imageView"
         android:layout_width="700dp"
         android:layout_height="wrap_content"
+        android:contentDescription="menu_img"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.429"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/photo_2022_10_25_19_28_45" />
+        app:srcCompat="@drawable/photo_2022_10_25_19_28_45"
+        tools:ignore="ImageContrastCheck" />
 
     <Button
         android:id="@+id/baursak"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="15dp"
-        android:text="Бауырсаки"
+        android:text="@string/baursaks"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/quirdaq" />
+        app:layout_constraintTop_toBottomOf="@+id/quirdaq"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/syrne"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="15dp"
-        android:text="Сырне"
+        android:text="@string/syrne"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/baursak" />
+        app:layout_constraintTop_toBottomOf="@+id/baursak"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/sorpa"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="15dp"
-        android:text="Сорпа"
+        android:text="@string/sorpa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/karta" />
+        app:layout_constraintTop_toBottomOf="@+id/karta"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/quirdaq"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="15dp"
-        android:text="Куырдак"
+        android:text="@string/quirdaq"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sorpa" />
+        app:layout_constraintTop_toBottomOf="@+id/sorpa"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/beshbarmak"
@@ -68,50 +74,55 @@
         android:layout_height="50dp"
         android:layout_marginTop="175dp"
         android:layout_marginBottom="8dp"
-        android:text="Бешбармак"
+        android:text="@string/beshbarmaks"
         app:layout_constraintBottom_toTopOf="@+id/qazy"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/qazy"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="15dp"
-        android:text="Казы"
+        android:text="@string/qazys"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/beshbarmak" />
+        app:layout_constraintTop_toBottomOf="@+id/beshbarmak"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/shuzik"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="15dp"
-        android:text="Шужык"
+        android:text="@string/shuzik"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/qazy" />
+        app:layout_constraintTop_toBottomOf="@+id/qazy"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/karta"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="15dp"
-        android:text="Карта"
+        android:text="@string/qarta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/shuzik" />
+        app:layout_constraintTop_toBottomOf="@+id/shuzik"
+        tools:ignore="TextContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="90dp"
         android:layout_height="100dp"
         android:layout_marginStart="160dp"
+        android:contentDescription="logo_menu"
         app:layout_constraintBottom_toTopOf="@+id/beshbarmak"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -122,6 +133,7 @@
         android:id="@+id/imageView3"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:contentDescription="logo_menu_2"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.807"
