@@ -133,6 +133,7 @@
         android:id="@+id/imageView3"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:clickable="true"
         android:contentDescription="logo_menu_2"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"

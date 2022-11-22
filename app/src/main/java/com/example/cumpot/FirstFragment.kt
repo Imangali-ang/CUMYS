@@ -8,6 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.FragmentTransaction
+import androidx.navigation.Navigation.findNavController
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 
 class FirstFragment : Fragment() {
     @SuppressLint("UseRequireInsteadOfGet")
@@ -19,10 +22,7 @@ class FirstFragment : Fragment() {
 
         val btn = view.findViewById<Button>(R.id.next)
         btn.setOnClickListener{
-            val secondFragment = SecondFragment()
-            val transaction: FragmentTransaction = fragmentManager!!.beginTransaction()
-            transaction.replace(R.id.menu,secondFragment)
-            transaction.commit()
+            findNavController().navigate(R.id.secondFragment)
         }
 
         return view

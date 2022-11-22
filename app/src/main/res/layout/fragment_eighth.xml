@@ -30,8 +30,8 @@
 
     <ImageView
         android:id="@+id/imageView15"
-        android:layout_width="302dp"
-        android:layout_height="296dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_marginTop="60dp"
         android:contentDescription="@string/quirdaq_img"
         android:src="@drawable/quirdaq"

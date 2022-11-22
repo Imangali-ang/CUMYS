@@ -30,12 +30,12 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="319dp"
+        android:layout_width="250dp"
         android:layout_height="283dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="80dp"
         android:src="@drawable/sudjuk"
         app:layout_constraintEnd_toEndOf="@+id/imageView5"
-        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintHorizontal_bias="0.338"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

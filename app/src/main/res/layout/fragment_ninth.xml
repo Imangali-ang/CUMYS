@@ -30,8 +30,8 @@
 
     <ImageView
         android:id="@+id/imageView17"
-        android:layout_width="318dp"
-        android:layout_height="389dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_marginTop="36dp"
         android:contentDescription="@string/baursaks_img"
         android:src="@drawable/baursaq"

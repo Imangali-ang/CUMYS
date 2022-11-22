@@ -35,7 +35,11 @@
         android:id="@+id/thirdFragment"
         android:name="com.example.cumpot.ThirdFragment"
         android:label="fragment_third"
-        tools:layout="@layout/fragment_third" />
+        tools:layout="@layout/fragment_third" >
+        <argument
+            android:name="dish"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/fourthFragment"
         android:name="com.example.cumpot.FourthFragment"
