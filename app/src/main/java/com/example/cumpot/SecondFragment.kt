@@ -19,11 +19,43 @@ class SecondFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_second, container, false)
 
         val btn = view.findViewById<Button>(R.id.beshbarmak)
+        val btn2 = view.findViewById<Button>(R.id.qazy)
+        val btn3 = view.findViewById<Button>(R.id.shuzik)
+        val btn4 = view.findViewById<Button>(R.id.karta)
+        val btn5 = view.findViewById<Button>(R.id.sorpa)
+        val btn6 = view.findViewById<Button>(R.id.quirdaq)
+        val btn7 = view.findViewById<Button>(R.id.baursak)
+        val btn8 = view.findViewById<Button>(R.id.syrne)
 
-        btn.setOnClickListener{
-            findNavController().navigate(R.id.thirdFragment)
+        btn.setOnClickListener {
+            navigateToDish(type = TYPE_BESH)
         }
-
+        btn2.setOnClickListener {
+            navigateToDish(type = "syrne")
+        }
+        btn3.setOnClickListener {
+            navigateToDish(type = "syrne")
+        }
+        btn4.setOnClickListener {
+            navigateToDish(type = "syrne")
+        }
+        btn5.setOnClickListener {
+            navigateToDish(type = "syrne")
+        }
+        btn6.setOnClickListener {
+            navigateToDish(type = "syrne")
+        }
+        btn7.setOnClickListener {
+            navigateToDish(type = "syrne")
+        }
+        btn8.setOnClickListener {
+            navigateToDish(type = "syrne")
+        }
         return view
+    }
+
+    private fun navigateToDish(type: String) {
+        val action = SecondFragmentDirections.actionSecondFragmentToThirdFragment(type)
+        findNavController().navigate(action)
     }
 }
