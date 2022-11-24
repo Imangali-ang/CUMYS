@@ -12,15 +12,6 @@
         <action
             android:id="@+id/action_secondFragment_to_thirdFragment"
             app:destination="@id/thirdFragment" />
-        <action
-            android:id="@+id/action_secondFragment_to_fourthFragment"
-            app:destination="@id/fourthFragment" />
-        <action
-            android:id="@+id/action_secondFragment_to_sixthFragment"
-            app:destination="@id/sixthFragment" />
-        <action
-            android:id="@+id/action_secondFragment_to_fifthFragment"
-            app:destination="@id/fifthFragment" />
     </fragment>
     <fragment
         android:id="@+id/firstFragment2"
@@ -40,19 +31,4 @@
             android:name="dish"
             app:argType="string" />
     </fragment>
-    <fragment
-        android:id="@+id/fourthFragment"
-        android:name="com.example.cumpot.FourthFragment"
-        android:label="fragment_fourth"
-        tools:layout="@layout/fragment_fourth" />
-    <fragment
-        android:id="@+id/fifthFragment"
-        android:name="com.example.cumpot.FifthFragment"
-        android:label="fragment_fifth"
-        tools:layout="@layout/fragment_fifth" />
-    <fragment
-        android:id="@+id/sixthFragment"
-        android:name="com.example.cumpot.SixthFragment"
-        android:label="fragment_sixth"
-        tools:layout="@layout/fragment_sixth" />
 </navigation>

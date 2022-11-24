@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import androidx.fragment.app.FragmentTransaction
 import androidx.navigation.fragment.findNavController
 
 class SecondFragment : Fragment() {
@@ -17,7 +16,6 @@ class SecondFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_second, container, false)
-
         val btn = view.findViewById<Button>(R.id.beshbarmak)
         val btn2 = view.findViewById<Button>(R.id.qazy)
         val btn3 = view.findViewById<Button>(R.id.shuzik)
