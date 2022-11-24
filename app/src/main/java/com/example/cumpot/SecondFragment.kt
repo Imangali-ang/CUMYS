@@ -31,25 +31,25 @@ class SecondFragment : Fragment() {
             navigateToDish(type = TYPE_BESH)
         }
         btn2.setOnClickListener {
-            navigateToDish(type = "syrne")
+            navigateToDish(type = TYPE_QAZY)
         }
         btn3.setOnClickListener {
-            navigateToDish(type = "syrne")
+            navigateToDish(type = TYPE_SHUZIK)
         }
         btn4.setOnClickListener {
-            navigateToDish(type = "syrne")
+            navigateToDish(type = TYPE_KARTA)
         }
         btn5.setOnClickListener {
-            navigateToDish(type = "syrne")
+            navigateToDish(type = TYPE_SORPA)
         }
         btn6.setOnClickListener {
-            navigateToDish(type = "syrne")
+            navigateToDish(type = TYPE_QUIRDAQ)
         }
         btn7.setOnClickListener {
-            navigateToDish(type = "syrne")
+            navigateToDish(type = TYPE_BAURSAK)
         }
         btn8.setOnClickListener {
-            navigateToDish(type = "syrne")
+            navigateToDish(type = TYPE_SYRNE)
         }
         return view
     }

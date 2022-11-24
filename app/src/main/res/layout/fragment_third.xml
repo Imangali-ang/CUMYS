@@ -30,7 +30,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/besh_img"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_marginTop="80dp"
@@ -48,7 +48,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="16dp"
-        android:text="Бешбарма́к, бишбарма́к, бесбарма́к — традиционное мясо-мучное блюдо тюркоязычных народов. Бешбармак готовится, как правило, по случаю семейных праздников или приёма дорогих гостей. В целом, блюдо представляет собой крошеное отварное мясо с лапшой, луковым соусом и некоторыми особенностями в технологии приготовления и подачи, что позволяет достичь вкуса, присущего именно этому блюду."
+        android:text="@string/besh_info"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"

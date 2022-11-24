@@ -40,13 +40,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/info_shuzik"
         android:layout_width="354dp"
         android:layout_height="371dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="136dp"
-        android:text="Суджу́к (азерб. sucuq, тур. sucuk, арм. սուջուխ, Անեփ), шужу́к или чужу́к (каз. шұжық), чучу́к (кирг. чучук), (чувашское сутă) — традиционные колбасы у тюркских, кавказских, балканских и ближневосточных народов."
+        android:text="@string/shuzik_info"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView5"

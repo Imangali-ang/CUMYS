@@ -41,11 +41,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/info_syrne"
         android:layout_width="341dp"
         android:layout_height="425dp"
         android:layout_marginBottom="16dp"
-        android:text="Мясо для сырне берут молодую ягнятину, из взрослого барашка такого нежного сырне не получится. Затем мясо немного маринуют в специях и тушат на пару 6 часов. За час до окончания тушения добавляют крупно порезанные овощи: в данном блюде были картофель и морковь."
+        android:text="@string/syrne_info"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"

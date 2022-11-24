@@ -24,12 +24,14 @@
         android:src="@drawable/photo_2022_10_25_19_28_45"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.865"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501"
         tools:ignore="ImageContrastCheck" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/qazy_img"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_marginTop="40dp"
@@ -40,11 +42,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/info_qazy"
         android:layout_width="354dp"
         android:layout_height="371dp"
         android:layout_marginBottom="16dp"
-        android:text="Казы (тат. казылык, башк. ҡаҙы, ҡаҙылыҡ, каз. қазы, кирг. казы, узб. qazi, крымскотат. къазылыкъ) — жир с брюшины, используемый при приготовлении деликатесной домашней колбасы из конины у ряда тюркских народов. Колбаса называется казы или чучук.  "
+        android:text="@string/qazy_info"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
