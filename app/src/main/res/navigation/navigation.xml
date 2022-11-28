@@ -6,7 +6,7 @@
     app:startDestination="@id/firstFragment2">
     <fragment
         android:id="@+id/secondFragment"
-        android:name="com.example.cumpot.SecondFragment"
+        android:name="com.example.cumpot.second.SecondFragment"
         android:label="fragment_second"
         tools:layout="@layout/fragment_second" >
         <action
@@ -28,7 +28,7 @@
         android:label="fragment_third"
         tools:layout="@layout/fragment_third" >
         <argument
-            android:name="dish"
-            app:argType="string" />
+            android:name="type"
+            app:argType="com.example.cumpot.second.FoodType" />
     </fragment>
 </navigation>

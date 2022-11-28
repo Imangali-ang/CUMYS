@@ -11,6 +11,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.example.cumpot.second.FoodType
 
 class ThirdFragment : Fragment() {
 
@@ -30,51 +31,40 @@ class ThirdFragment : Fragment() {
         btn.setOnClickListener{
             findNavController().navigateUp()
         }
-        when (args.dish) {
-            TYPE_BESH -> {
+        when (args.type) {
+            FoodType.TYPE_BESH -> {
                 dishImage.setImageResource(R.drawable.besh)
                 dishInfo.setText(R.string.besh_info)
             }
-            TYPE_QAZY -> {
+            FoodType.TYPE_QAZY -> {
                 dishImage.setImageResource(R.drawable.qazy)
                 dishInfo.setText(R.string.qazy_info)
             }
-            TYPE_SHUZIK -> {
+            FoodType.TYPE_SHUZIK -> {
                 dishImage.setImageResource(R.drawable.sudjuk)
                 dishInfo.setText(R.string.shuzik_info)
             }
-            TYPE_KARTA -> {
+            FoodType.TYPE_KARTA -> {
                 dishImage.setImageResource(R.drawable.qarta)
                 dishInfo.setText(R.string.qarta_info)
             }
-            TYPE_SORPA -> {
+            FoodType.TYPE_SORPA -> {
                 dishImage.setImageResource(R.drawable.sorpa)
                 dishInfo.setText(R.string.sorpa_info)
             }
-            TYPE_QUIRDAQ -> {
+            FoodType.TYPE_QUIRDAQ -> {
                 dishImage.setImageResource(R.drawable.quirdaq)
                 dishInfo.setText(R.string.quirdaq_info)
             }
-            TYPE_BAURSAK -> {
+            FoodType.TYPE_BAURSAK -> {
                 dishImage.setImageResource(R.drawable.baursaq)
                 dishInfo.setText(R.string.baursaq_info)
             }
-            TYPE_SYRNE -> {
+            FoodType.TYPE_SYRNE -> {
                 dishImage.setImageResource(R.drawable.syrne)
                 dishInfo.setText(R.string.syrne_info)
             }
         }
-        args.dish
-
         return view
     }
 }
-
-const val TYPE_BESH = "besh"
-const val TYPE_QAZY = "qazy"
-const val TYPE_SHUZIK = "shuzik"
-const val TYPE_KARTA = "karta"
-const val TYPE_SORPA = "sorpa"
-const val TYPE_QUIRDAQ = "quirdaq"
-const val TYPE_BAURSAK = "baursak"
-const val TYPE_SYRNE = "syrne"
