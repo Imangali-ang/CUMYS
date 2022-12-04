@@ -15,6 +15,7 @@ class FoodAdapter(private val adapter: (Food) -> Unit) :
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FoodViewHolder {
         return FoodViewHolder.getViewHolder(parent)
     }
+
     override fun onBindViewHolder(holder: FoodViewHolder, position: Int) {
         holder.configure(adapter, getItem(position))
     }
@@ -23,7 +24,7 @@ class FoodAdapter(private val adapter: (Food) -> Unit) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun configure(adapter: (Food) -> Unit, food: Food) {
-            binding.button.setText(food.name)
+            binding.button.text = food.name
             binding.button.setOnClickListener {
                 adapter(food)
             }
