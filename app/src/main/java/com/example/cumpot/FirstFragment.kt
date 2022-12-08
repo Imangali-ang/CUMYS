@@ -19,7 +19,6 @@ class FirstFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        Log.d("Resid", R.drawable.baursaq.toString()) //329758947523895
 
         val view = inflater.inflate(R.layout.fragment_first, container, false)
 

@@ -2,6 +2,7 @@ package com.example.cumpot.third
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -59,5 +60,13 @@ class ThirdFragment : Fragment() {
                 dishImage.setImageResource(food.imageResId)
             }
         }
+        Log.d("Beshparmak", R.drawable.besh.toString())
+        Log.d("Qazy", R.drawable.qazy.toString())
+        Log.d("Sudjuk", R.drawable.sudjuk.toString())
+        Log.d("Qarta", R.drawable.qarta.toString())
+        Log.d("Sorpa", R.drawable.sorpa.toString())
+        Log.d("Quirdaq", R.drawable.quirdaq.toString())
+        Log.d("Baursaq", R.drawable.baursaq.toString())
+        Log.d("Syrne", R.drawable.syrne3.toString())
     }
 }

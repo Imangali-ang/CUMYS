@@ -23,7 +23,7 @@ abstract class CumysDatabase : RoomDatabase() {
                         CumysDatabase::class.java,
                         "CumysDatabase"
                     )
-//               TODO         .createFromAsset("database/CumysDatabase.db")
+// TODO                        .createFromAsset("database/CumysDatabase.db")
                         .build()
                     database = INSTANCE
                     return INSTANCE
