@@ -11,11 +11,12 @@ import androidx.navigation.fragment.findNavController
 import com.example.cumpot.adapter.FoodAdapter
 import com.example.cumpot.data.database.CumysDatabase
 import com.example.cumpot.databinding.FragmentSecondBinding
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class SecondFragment : Fragment() {
     private var _binding: FragmentSecondBinding? = null
     private val binding get() = _binding!!
-    private lateinit var viewModel: SecondViewModel
+    private val viewModel by viewModel<SecondViewModel>()
     private lateinit var adapter: FoodAdapter
 
     override fun onCreateView(
@@ -23,16 +24,11 @@ class SecondFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentSecondBinding.inflate(inflater, container, false)
-        val context = requireActivity().applicationContext
-        val database = CumysDatabase.getInstance(context)
-        val factory = SecondViewModelFactory(database)
-        viewModel = ViewModelProvider(this, factory)[SecondViewModel::class.java]
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
 
         adapter = FoodAdapter { food ->
             navigateToDish(food.type)

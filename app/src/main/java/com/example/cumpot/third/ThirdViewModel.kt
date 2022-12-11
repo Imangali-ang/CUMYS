@@ -1,19 +1,21 @@
 package com.example.cumpot.third
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.cumpot.data.database.CumysDatabase
+import com.example.cumpot.data.model.FoodDto
+import com.example.cumpot.data.repository.CumysRepository
 import kotlinx.coroutines.launch
 
-class ThirdViewModel(private val type: String, private val database: CumysDatabase): ViewModel() {
-    val food = database.dao().getByType(type)
-
-
-    fun setFavourite() {
+class ThirdViewModel(private val repository: CumysRepository): ViewModel() {
+    fun setFavourite(food: FoodDto) {
         viewModelScope.launch {
-            food.value?.let { food ->
-                database.dao().setFavourite(food.copy(favourite = !food.favourite))
-            }
+            repository.setFavourite(food.copy(favourite = !food.favourite))
         }
+    }
+
+    fun getType(type: String): LiveData<FoodDto?> {
+        return repository.getByType(type)
     }
 }

@@ -15,9 +15,10 @@ import androidx.navigation.fragment.navArgs
 import com.example.cumpot.R
 import com.example.cumpot.data.database.CumysDatabase
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class ThirdFragment : Fragment() {
-    private lateinit var viewModel: ThirdViewModel
+    private val viewModel by viewModel<ThirdViewModel>()
     private val args: ThirdFragmentArgs by navArgs()
 
     override fun onCreateView(
@@ -25,12 +26,6 @@ class ThirdFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_third, container, false)
-
-        val context = requireActivity().applicationContext
-        val database = CumysDatabase.getInstance(context)
-        val factory = ThirdViewModelFactory(args.type.name, database)
-        viewModel = ViewModelProvider(this, factory)[ThirdViewModel::class.java]
-
         return view
     }
 
@@ -48,16 +43,18 @@ class ThirdFragment : Fragment() {
         val dishInfo = view.findViewById<TextView>(R.id.info_besh)
         val title = view.findViewById<TextView>(R.id.title)
 
-        star.setOnClickListener {
-            viewModel.setFavourite()
-        }
 
-        viewModel.food.observe(viewLifecycleOwner) { food ->
+        viewModel.getType(args.type.name).observe(viewLifecycleOwner) { food ->
             food?.let { food ->
                 star.setImageResource(if (food.favourite) R.drawable.ic_baseline_star_24 else R.drawable.ic_baseline_star_border_24)
                 dishInfo.text = food.desc
                 title.text = food.title
                 dishImage.setImageResource(food.imageResId)
+
+
+                star.setOnClickListener {
+                    viewModel.setFavourite(food)
+                }
             }
         }
         Log.d("Beshparmak", R.drawable.besh.toString())
