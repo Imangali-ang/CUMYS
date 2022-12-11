@@ -44,18 +44,5 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/logoformainpage" />
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginEnd="16dp"
-            android:clickable="true"
-            android:contentDescription="logo_menu_2"
-            android:focusable="true"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/imageView2"
-            app:srcCompat="@drawable/questionformainpage" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
