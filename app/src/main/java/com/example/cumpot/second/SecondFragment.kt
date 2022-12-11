@@ -1,15 +1,12 @@
 package com.example.cumpot.second
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.cumpot.adapter.FoodAdapter
-import com.example.cumpot.data.database.CumysDatabase
 import com.example.cumpot.databinding.FragmentSecondBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
