@@ -25,9 +25,9 @@ class FirstFragment : Fragment() {
         }
         imageView3.setOnClickListener {
             val email = Intent(Intent.ACTION_SEND)
-            email.putExtra(Intent.EXTRA_EMAIL, arrayOf<String>("200107095@stu.sdu.edu.kz"))
+            email.putExtra(Intent.EXTRA_EMAIL, arrayOf<String>("200107112@stu.sdu.edu.kz"))
             email.putExtra(Intent.EXTRA_SUBJECT, "Hello")
-            email.putExtra(Intent.EXTRA_TEXT, "Cum")
+            email.putExtra(Intent.EXTRA_TEXT, "CUMPOT")
             email.type = "message/rfc822"
 
             (activity as? MainActivity)?.startActivity(Intent.createChooser(email, "Choose an Email client :"))
